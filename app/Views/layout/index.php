@@ -1,61 +1,38 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
+<?= $this->extend('layout/templates/index');?>
+<?= $this->section('content');?>
 
-<head>
-  <meta charset="UTF-8">
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">     -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title><?= $title ?></title>
-
-  <!-- style -->
-  <link rel="stylesheet" href="<?=base_url()?>/lib/css/style.css">
-
-  <!-- stylesheet for fontawesome -->
-  <link href="<?= base_url();?>/lib/fontawesome-v6.1/css/all.min.css" rel="stylesheet">
-
-  <!-- icon shortcut -->
-  <link rel="shortcut icon" href="<?= base_url();?>/logo/yarsi.jpg">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="<?= base_url();?>/lib/css/bootstrap.min.css" />
-
-  <!-- JQuery dan Javascript Bootstrap -->
-  <script src="<?= base_url()?>/lib/js/bootstrap.min.js"></script>
-
-  <!-- jquery versi 3.6.0 -->
-  <script src="<?= base_url();?>/lib/jquery-v3.6.0/jquery.min.js"></script>
-
-</head>
-
-<body>
-  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">BPM FHUY</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+<section class="">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="card">
+          <img src="<?= base_url();?>/logo/yarsi.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
       </div>
+      <!-- col-6 -->
+
+      <div class="col-6">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <!-- col-6 -->
     </div>
-  </nav>
+  </div>
+</section>
 
-</body>
-
-</html>
+<?= $this->endSection(); ?>
+<?= $this->section('scripts'); ?>
+<?= $this->endSection(); ?>

@@ -15,21 +15,37 @@ class Home extends BaseController
 
     public function login()
     {
-        return view('layout/login');
+        $data = [
+            'title' => "BPM Fakultas Hukum Universitas YARSI"
+        ];
+        
+        return view('layout/login', $data);
     }
 
     public function forgotpassword()
     {
-        return view('layout/forgot');
+        $data = [
+            'title' => "BPM Fakultas Hukum Universitas YARSI"
+        ];
+        
+        return view('layout/forgot', $data);
     }
 
     public function register()
     {
-        return view('layout/register');
+        $data = [
+            'title' => "BPM Fakultas Hukum Universitas YARSI"
+        ];
+        
+        return view('layout/register', $data);
     }
 
     public function change_password()
     {
-        return view('layout/change_password');
+        $data = [
+            'title' => "BPM Fakultas Hukum Universitas YARSI"
+        ];
+        
+        return view('layout/change_password',$data);
     }
 }
